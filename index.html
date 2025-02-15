@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is the Relation Between Sunspots and Solar Irradiance?</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Helvetica', sans-serif;
+            color: #333;
+            background: linear-gradient(to bottom right, #f3f6fd, #dce6f7);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #fff;
+            padding: 2em 1em;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Sections */
+        section {
+            margin: 2em auto;
+            padding: 2em;
+            width: 80%;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2em;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .small-image {
+            width: 60%; /* Adjust size as needed */
+            max-height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            object-fit: cover;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+            margin: 20px;
+        }
+        .image-grid img {
+            width: 200px;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .image-grid img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* New Timeline Section */
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2em 0;
+        }
+
+        .timeline-event {
+            width: 60%;
+            margin: 1em 0;
+            padding: 1em;
+            border-left: 4px solid #2980b9;
+            background-color: #ecf5ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-event h3 {
+            margin: 0 0 0.5em 0;
+            color: #2980b9;
+        }
+
+        .timeline-event p {
+            margin: 0;
+        }
+
+        /* Source Section */
+        .sources {
+            margin: 2em auto;
+            padding: 2em;
+            width: 80%;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .sources:hover {
+            transform: translateY(-10px);
+        }
+
+        .sources h2 {
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        .sources ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources li {
+            margin: 1em 0;
+        }
+
+        .sources a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        .sources a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>What is the Relation Between Sunspots and Solar Irradiance?☀️</h1>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="text">
+            <h2>The Sun: A Cosmic Story of Energy and Mystery</h2>
+            <p>The Sun, our closest star, isn't just a blazing ball of fire—it’s a source of cosmic events that shape our world. Its activity, often hidden from our everyday lives, plays a crucial role in influencing Earth's climate and space weather. Through this website, we embark on a fascinating journey to unravel the tale of the Sun, focusing on two key characters: sunspots and solar irradiance.
+
+            </p>
+
+            <!-- Sunspots Subsection -->
+            <h3>Mysterious Shadows on the Sun:What Are Sunspots?</h3>
+            <p>Sunspots are dark, cooler regions on the Sun's surface caused by magnetic field disturbances. Despite being cooler than surrounding areas, an increase in sunspots indicates high solar activity. Sunspots follow an approximately 11-year solar cycle, with periods of maximum and minimum activity.</p>
+
+            <!-- Solar Irradiance Subsection -->
+            <h3>The Sun's Ever-Changing Glow:What is Solar Irradiance?</h3>
+            <p>Total Solar Irradiance (TSI) measures the Sun's energy output reaching the Earth's atmosphere. It varies with the solar cycle due to the interplay of sunspots (cool regions) and faculae (bright, hot regions). Increased solar activity leads to higher irradiance levels, impacting climate and space weather.Think of solar irradiance as the Sun's whisper to Earth, sometimes soft, sometimes fierce.</p>
+        </div>
+        <div class="image">
+            <img src="Screenshot 2025-02-15 163053.png" alt="Sunspots and Solar Irradiance">
+        </div>
+    </section>
+
+    <!-- Mean Sunspot Count Section -->
+    <section class="sunspot-count">
+        <div class="text">
+            <h2>The Mean Sunspot Count: A Celestial Heartbeat</h2>
+            <p>When we examine the yearly mean sunspot count, a captivating pattern emerges—a solar heartbeat, with peaks approximately every 11 years. This pattern, known as the solar cycle, reflects the Sun's magnetic activity. From the graphs, we can observe that sunspot numbers increase and decrease cyclically. A significant decrease in sunspots over a prolonged period (like during a "Grand Solar Minimum") could contribute to a slight global cooling trend, although other factors like volcanic activity and ocean circulation play a larger role.</p>
+            <p>One interesting aspect of solar cycles is the Maunder Minimum (1645–1715), a period of minimal sunspot activity associated with the "Little Ice Age." Similarly, the Dalton Minimum (1790–1820) also exhibited reduced solar activity, coinciding with lower global temperatures.</p>
+        </div>
+        <div class="image">
+            <img src="Screenshot 2025-02-14 221811.png" alt="Yearly Mean Sunspot Number">
+        </div>
+    </section>
+
+    <!-- Additional Sunspot Observation Section -->
+    <section class="sunspot-comparison">
+        <div class="text">
+            <h2>A Journey Through Time, Solar Observations Evolve: Manual vs Systematic</h2>
+            <p>In the 1600s, sunspot observations were a game of patience and luck, reliant on clear skies and human precision. Early astronomers meticulously drew sunspots by hand, their records imperfect but invaluable.
+
+                Then came 1749—the dawn of systematic observations. The telescope became humanity’s time machine, capturing sunspot activity with increasing accuracy. Over time, manual drawings gave way to automated measurements, reducing errors and unlocking deeper insights into solar patterns.</p>
+        </div>
+        <div class="image">
+            <img src="Screenshot 2025-02-14 222923.png" alt="Sunspot Observations Comparison">
+        </div>
+    </section>
+
+    <!-- Solar Irradiance Cycle Section -->
+    <section class="irradiance-cycle">
+        <div class="text">
+            <h2>Solar Irradiance Cycles: The Sun's Silent Pulse</h2>
+            <p>When we trace irradiance over centuries, we find it mirrors sunspot activity like a shadow following its source. During the Maunder Minimum, irradiance dipped, aligning with Earth’s cooler climate. In contrast, the 20th century saw a rise, paralleling a period of global warming.
+
+                Could this correlation explain climate changes? Partially, yes. But climate is a complex narrative influenced by volcanic eruptions, ocean currents, and human activities alongside the Sun’s behavior..</p>
+        </div>
+        <div class="image">
+            <img src="Screenshot 2025-02-15 110532.png" alt="Solar Irradiance Cycles">
+        </div>
+    </section>
+
+    <!-- Timeline of Key Events -->
+    <section class="timeline">
+        <h2>Timeline of Solar Milestones: Echoes of the Past</h2>
+        <div class="timeline-event">
+            <h3>Maunder Minimum (1645–1715)</h3>
+            <p>A prolonged period of low sunspot activity associated with cooler global temperatures during the Little Ice Age.</p>
+        </div>
+        <div class="timeline-event">
+            <h3>Dalton Minimum (1790–1820)</h3>
+            <p>A period of low solar activity coinciding with cooler temperatures in the Northern Hemisphere.</p>
+        </div>
+        <div class="timeline-event">
+            <h3>Modern Maximum (1950s–1980s)</h3>
+            <p>A period of increased solar activity associated with warmer global temperatures.</p>
+        </div>
+        <div class="timeline-event">
+            <h3>Current Solar Cycle 25 (2020–present)</h3>
+            <p>Ongoing observations suggest a higher-than-expected sunspot count and irradiance levels, impacting space weather forecasts.</p>
+        </div>
+    </section>
+        <!-- Yearly Observations of Sunspots Section -->
+        <section class="observations">
+            <div class="text">
+                <h2>Observing Sunspots Over the Years: The Rise of Solar Curiosity</h2>
+                <p>Imagine charting the Sun's activity over centuries. Early records are sparse, with sunspot counts near zero before the 1800s. But from 1820 onward, curiosity soared. Telescopes improved, observations surged, and by the mid-20th century, sunspot monitoring became a global scientific endeavor.
+
+                </p>
+                <ul>
+                    <li><strong>Before 1820:</strong> Observations were sparse, often close to zero, due to limited technology and reliance on manual recordings.</li>
+                    <li><strong>1820 to Early 1900s:</strong> Observations gradually increased as telescopic capabilities improved and scientific interest grew.</li>
+                    <li><strong>Mid-20th Century Surge:</strong> A noticeable spike in observations occurred around the mid-20th century with the establishment of systematic solar observation programs.</li>
+                    <li><strong>21st Century Peak:</strong> The modern era witnessed a sharp increase in yearly observations, driven by advanced instrumentation, space-based observatories, and automated monitoring systems.</li>
+                </ul>
+                <p>This trend highlights the growing interest and capability in studying solar activity over time.</p>
+            </div>
+            <div class="image">
+                <img src="Screenshot 2025-02-15 104016.png" alt="Yearly Observations of Sunspots">
+            </div>
+        </section>
+        <section class="data-section">
+            <h2>The Great Correlation: Sunspots and Solar Irradiance</h2>
+            <img src="Screenshot 2025-02-15 113946.png" alt="Sunspots vs Solar Irradiance Over Time" class="data-image" />
+            <p>
+                When sunspot numbers rise, irradiance follows. Graphs of these variables reveal synchronized peaks and troughs, painting a compelling picture of their relationship. Yet, the relationship isn’t linear; during some cycles, irradiance plateaus, suggesting saturation. Interestingly, consecutive cycles sometimes mirror each other, hinting at long-term solar rhythms. Notably:
+The early 1800s saw a prolonged dip in irradiance.
+The mid-1900s marked a radiant peak.
+
+
+            </p>
+            
+        </section>
+        
+        <section class="data-section">
+            <h2>Solar Cycles Over Time</h2>
+            <img src="Screenshot 2025-02-15 114550.png" alt="Solar Cycles Over Time" class="small-image" />
+            <p>
+                The graph above displays individual solar cycles from 1755 onward. Important observations include:
+            </p>
+            <ul>
+                <li>Solar cycles exhibit an approximate 11-year periodicity, corresponding with the solar cycle pattern.</li>
+                <li>The amplitude of solar cycles varies, with particularly high peaks observed during Solar Cycle 19 (1954–1964).</li>
+                <li>Some cycles, such as Solar Cycle 5 (1798–1810), show reduced activity, corresponding to the Dalton Minimum.</li>
+                <li>Recent cycles display a downward trend in peak sunspot numbers compared to mid-20th-century cycles.</li>
+            </ul>
+        </section>
+        <section class="data-section">
+            <h2>Analysis of Each Solar Cycle</h2>
+            <div class="image-grid">
+                <img src="Screenshot 2025-02-15 115452.png" alt="Solar Cycle 1">
+                <img src="Screenshot 2025-02-15 115509.png" alt="Solar Cycle 2">
+                <img src="Screenshot 2025-02-15 115520.png" alt="Solar Cycle 3">
+                <img src="Screenshot 2025-02-15 115529.png" alt="Solar Cycle 4">
+                <img src="Screenshot 2025-02-15 115539.png" alt="Solar Cycle 5">
+                <img src="Screenshot 2025-02-15 115550.png" alt="Solar Cycle 6">
+                <img src="Screenshot 2025-02-15 115559.png" alt="Solar Cycle 7">
+                <img src="Screenshot 2025-02-15 115709.png" alt="Solar Cycle 8">
+                <img src="Screenshot 2025-02-15 115716.png" alt="Solar Cycle 9">
+                <img src="Screenshot 2025-02-15 115724.png" alt="Solar Cycle 10">
+                <img src="Screenshot 2025-02-15 115732.png" alt="Solar Cycle 11">
+                <img src="Screenshot 2025-02-15 115739.png" alt="Solar Cycle 12">
+                <img src="Screenshot 2025-02-15 115748.png" alt="Solar Cycle 13">
+                <img src="Screenshot 2025-02-15 115757.png" alt="Solar Cycle 14">
+                <img src="Screenshot 2025-02-15 115806.png" alt="Solar Cycle 15">
+                <img src="Screenshot 2025-02-15 115815.png" alt="Solar Cycle 16">
+                <img src="Screenshot 2025-02-15 115824.png" alt="Solar Cycle 17">
+                <img src="Screenshot 2025-02-15 115834.png" alt="Solar Cycle 18">
+                <img src="Screenshot 2025-02-15 115843.png" alt="Solar Cycle 19">
+                <img src="Screenshot 2025-02-15 115851.png" alt="Solar Cycle 20">
+                <img src="Screenshot 2025-02-15 115858.png" alt="Solar Cycle 21">
+                <img src="Screenshot 2025-02-15 115906.png" alt="Solar Cycle 22">
+                <img src="Screenshot 2025-02-15 115914.png" alt="Solar Cycle 23">
+                <img src="Screenshot 2025-02-15 115923.png" alt="Solar Cycle 24">
+                <img src="Screenshot 2025-02-15 115931.png" alt="Solar Cycle 25">
+            </div>
+                <p>
+                    The above images represent the analysis of individual solar cycles from Cycle 1 (1755) to Cycle 25 (current cycle). Each image illustrates the sunspot activity and its variations within each cycle.
+                </p>
+        </section>
+        <section class="data-section">
+            <h2>Correlation Between Sunspots,Solar Irradiance and each solar cycle</h2>
+            <p>
+                The graph above demonstrates the relationship between sunspots, solar irradaince over each cycle.It is observed that the range solar irradiance was seen low between 1800-1820. While it incresed from 1940 and is on peak in recent years.It is observed that some of the consecutive 2 cycles are having quite similar patterns showing consistent increase or decrease in solar irradince over 20-22 years. Key insights include:
+            </p>
+            <ul>
+                <li>Periods of high sunspot activity generally align with increased solar flare occurrences.</li>
+                <li>The solar maximum phases consistently show higher solar flare activity compared to minima.</li>
+                <li>This correlation supports the hypothesis that sunspots, as markers of magnetic activity, indicate potential solar flare events.</li>
+            </ul>
+        </section>
+        <section class="data-section">
+            <h2>Understanding Attribute Relationships in Solar Data</h2>
+            <img src="Screenshot 2025-02-15 171829.png" alt="Solar Cycles Over Time" class="small-image" />
+            <p>
+                A strong positive correlation between sunspot numbers and TSI supports the hypothesis that sunspot activity affects solar irradiance.
+                Negative or weak correlations with other variables might suggest minimal interaction with sunspot activity.
+            </p>
+        </section>
+        <section class="data-section">
+            <h2>Sunspots vs Solar Irradiance</h2>
+            <img src="Screenshot 2025-02-15 171803.png" alt="Solar Cycles Over Time" class="small-image" />
+            <p>
+                The scatter plot of sunspot numbers versus solar irradiance reveals a distinct positive correlation. As the sunspot numbers increase, solar irradiance tends to rise, indicating that solar activity strongly influences energy output. This relationship aligns with the solar cycle theory, where more sunspots correlate with higher solar activity and increased irradiance.Cyclical Pattern: The points often follow cyclical trends, corresponding to the 11-year solar cycle, where irradiance peaks during solar maximum and dips during solar minimum.
+                Clusters and Outliers: Dense clusters appear around solar maxima, while sparse points indicate minima. Outliers may correspond to years with anomalous solar activity or measurement inconsistencies.
+                Non-linear Behavior: The relationship isn't perfectly linear; during certain high-activity periods, irradiance may plateau, suggesting saturation effects.
+            </p> 
+        </section>      
+        <div class="section">
+            <h2>🌡️ Effect on Temperature</h2>
+            <p>The relationship between sunspots, solar irradiance, and temperature can be summarized as follows:</p>
+            <ul>
+                <li><span class="highlight">More Sunspots</span> → More Faculae → Increased Total Solar Irradiance → Higher Energy Output.</li>
+                <li>The Sun's core temperature remains stable, but the outer layers may experience localized heating.</li>
+            </ul>
+            <p>Key observations include:</p>
+            <ul>
+                <li>Periods of increased solar irradiance often correspond with higher global temperatures.</li>
+                <li>Long-term trends indicate a potential link between solar activity and Earth's climate patterns.</li>
+                <li>The 20th-century temperature increase appears partially correlated with solar irradiance changes, though anthropogenic factors also play a role.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>🌌 Auroras: The Celestial Light Show of Solar Impact</h2>
+            <p>One of the most spectacular effects of solar activity is the appearance of <span class="highlight">auroras</span>, often seen as glowing curtains of green, purple, and red dancing across the polar skies. But these mesmerizing lights tell a deeper story.</p>
+            <p>When the Sun hurls charged particles toward Earth during solar storms, they collide with our planet’s magnetic field. These interactions funnel the particles toward the poles, where they collide with atmospheric gases, creating brilliant auroras.</p>
+            <ul>
+                <li><strong>Aurora Borealis (Northern Lights):</strong> Seen in the Northern Hemisphere.</li>
+                <li><strong>Aurora Australis (Southern Lights):</strong> Seen in the Southern Hemisphere.</li>
+            </ul>
+            <p>Solar storms, particularly during solar maxima, enhance aurora activity. Besides their beauty, auroras signal increased solar activity, which can disrupt:</p>
+            <ul>
+                <li>Satellite communications</li>
+                <li>GPS systems</li>
+                <li>Power grids</li>
+            </ul>
+            <p>Thus, the dancing lights act as Earth's visual alert to the Sun’s magnetic moods.</p>
+        </div>
+
+    <!-- Sources Section -->
+    <section class="sources">
+        <h2>Data Sources and References</h2>
+        <ul>
+            <li><a href="https://www.sidc.be/silso/" target="_blank">Sunspot Index and Long-term Solar Observations (SILSO)</a></li>
+            <li><a href="https://lasp.colorado.edu/home/sorce/" target="_blank">LASP Total Solar Irradiance Data</a></li>
+            <li><a href="https://data.giss.nasa.gov/" target="_blank">NASA GISS Climate Data</a></li>
+            <li><a href="https://www.ncei.noaa.gov/" target="_blank">NOAA Solar and Climate Data</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sunspot-Irradiance Analysis Project | Designed for educational and analytical purposes only.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('load', () => {
+            alert('Welcome to the Sunspot-Irradiance Analysis Website!');
+        });
+    </script>
+</body>
+</html>
